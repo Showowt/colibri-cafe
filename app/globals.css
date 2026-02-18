@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #d4af37;
+  --color-dark: #0f0f1a;
+  --color-darker: #0a0a12;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* No rounded corners - APEX aesthetic */
+* {
+  border-radius: 0 !important;
+}
+
+/* Gold accents */
+.text-gold { color: var(--color-primary); }
+.bg-gold { background-color: var(--color-primary); }
+.border-gold { border-color: var(--color-primary); }
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
